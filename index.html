@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Iceland&family=Montserrat&family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Iceland&family=Montserrat&family=Orbitron&family=Poppins:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="validation">
+    <div class="phone">
+            <label for = "" class = "PhoneText">
+              <span>
+                Phone number
+              </span> 
+            </label>
+            <input type = "text" class = "phoneNum" required maxlenght = "20"placeholder="Enter your number">
+            <button class = "phoneSubmit">Phone check</button>
+            <span id="result"></span>
+    </div>   
+
+    <div class="number">
+        <label for = "" class = "Phonepn">
+            <span>
+             Personal number
+            </span> 
+          </label>
+          <input type = "text" class = "personalNumber" required maxlength="14"  minlength="13"   placeholder="Enter your personal number">
+          <button class = "numberSubmit">Personal number check</button>
+          <span id="resultt"></span>
+    </div>
+</div>
+</body>
+<script src="app.js"></script>
+</html>
