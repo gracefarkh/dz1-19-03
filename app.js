@@ -21,16 +21,19 @@ phoneSubmit.addEventListener("click", () => {
         alert(result.innerText  + " " + " ,please enter your number correctly")
     }
 });
-
-let regexr = /^[12]\d{13}/
+// const regexp = /^(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)|0[1-9]{2}$/;
+// let regexr = /^[1-2]\d{13}$/
 // let regexr = /[12] {14}/
 // let regexr = /[1-2][0-9]/
 // let regexr = /[12] \d{14}/
 // let regexr = /\d{1,2}/
 // let regexr =/ [12][0-9]/
 
+
+const regexp = /^(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)|0[1-9]{2}$/;
+
 numberSubmit.addEventListener("click" , ()=>{
-    if(regexr.test(personalNumber.value)){
+    if(regexp.test(personalNumber.value)){
         resultt.innerText = "Acceptable"
         alert("Success")
         resultt.style.color = "green"
