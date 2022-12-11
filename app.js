@@ -40,7 +40,7 @@ numberSubmit.addEventListener("click" , ()=>{
     }else{
         resultt.innerText = "Unacceptable"
         resultt.style.color = "red"
-        alert(resultt.innerText + " ,please enter your personal number correctly")
+        alert(resultt.innerText + " ,please enter your date of birth correctly")
     
     }
 });
