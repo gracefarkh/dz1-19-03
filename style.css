@@ -22,12 +22,16 @@ body{
 }
 .number{
     display: flex;
-    margin-top: 125px;
+    margin-top: 36px;
 }
 .phone{
     display: flex;
     margin-top: 62px;
-    margin-right: 124px;
+    margin-right: 62px;
+}
+.date{
+    justify-content: space-evenly;
+    margin-top: 36px;
 }
 button{
     outline: none;
@@ -54,6 +58,13 @@ input.phoneNum{
     width: 139px;
     font-family: 'Iceland', cursive;
 }
+input.dateOfBirth{
+    font-size: 15px;
+    width: 151px;
+    /* width: 205px; */
+    font-family: 'Iceland', cursive;
+}
+
 ::placeholder{
     font-size: 15px;
 }
@@ -61,5 +72,8 @@ input.phoneNum{
     font-size: 10px;
 }
 .phoneSubmit{
+    font-size: 10px;
+}
+.dateSubmit{
     font-size: 10px;
 }

@@ -19,14 +19,15 @@
 <link href="https://fonts.googleapis.com/css2?family=Iceland&family=Montserrat&family=Orbitron&family=Poppins:wght@200&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="validation">
+    <form action="submit" class="validation">
+
     <div class="phone">
             <label for = "" class = "PhoneText">
               <span>
                 Phone number
               </span> 
             </label>
-            <input type = "text" class = "phoneNum" required maxlenght = "20"placeholder="Enter your number">
+            <input type = "text" class = "phoneNum" required maxlenght = "20" placeholder="Enter your number">
             <button class = "phoneSubmit">Check</button>
             <span id="result"></span>
     </div>   
@@ -34,14 +35,26 @@
     <div class="number">
         <label for = "" class = "Phonepn">
             <span>
-            Date of birth
+            Personal number
             </span> 
           </label>
-          <input type = "text" class = "personalNumber" required maxlength="10"  minlength="10"   placeholder="Enter your date of birth">
+          <input type = "text" class = "personalNumber" required minlength="13" maxlength = "13"placeholder="Enter your personal number ">
           <button class = "numberSubmit">Check</button>
           <span id="resultt"></span>
     </div>
-</div>
+
+    <div class="date">
+      <label for = "" class = "date">
+          <span>
+          Date of birth
+          </span> 
+        </label>
+        <input type = "text" class = "dateOfBirth"    placeholder="Enter your date of birth">
+        <button class = "dateSubmit">Check</button>
+        <span id="resultt3"></span>
+  </div>
+     <!-- <button class="subm">submit</button> -->
+    </form>
 </body>
 <script src="app.js"></script>
 </html>
